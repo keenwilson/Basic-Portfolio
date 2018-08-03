@@ -1,0 +1,34 @@
+h1 h2 h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+header {
+    background-color: #ffffff;
+    border: #cccccc;
+}
+
+.logo {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 200px;
+}
+
+div {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: #dddddd;
+}
+
+nav {
+    display: block;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #666666;
+}
