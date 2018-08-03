@@ -5,19 +5,34 @@
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     </head>
     <body>
-        <form method="get">
-            Name <br>
-            <input type="text" name="Name">
-            <br>
-            Email <br>
-            <input type="text" name="Email">
-            <br>
-            Message <br>
-            <textarea name="Message" rows="4" cols="50"> 
-
-            </textarea>
-            <br>
-            <button type="submit">Submit</button>
-        </form>
+        <!--Site Header-->  
+        <header>
+            <div class=header_container>
+                <!--Navigation Bar-->  
+                <div class="navbar">
+                    <a href="/index.html">About</a> |
+                    <a href="/portfolio.html">Portfolio</a> |
+                    <a href="/contact.html">Contact</a> 
+                </div>      
+                <!--Logo--> 
+                <div class="logo">Keen Wilson</div>
+            </div>
+        </header>
+        <!--Site Content-->  
+        <div class="container" id="form">
+            <h2>Contact</h2>
+            <hr>
+            <form action="action_page.php" method="get">
+            <label for"name">Name</label> 
+            <input type="text" id="name" name="Name" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!--Footer-->  
+        <footer class="footer">Copyright®</footer>
     </body>
-</html>>
+</html>

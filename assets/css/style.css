@@ -8,11 +8,20 @@ body {
     margin: 0px;
     padding:0px;
     display: grid;
+    
 }
 
-h1, h2, h3 {
-    font-family: 'Palatino', 'Times', serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Palatino', 'Georgia', 'Times', "Times New Roman", serif;
 }
+
+h2 {
+    border-bottom: 2px solid #f6f6f6;
+    padding: 20px;
+    margin-top: 0;
+}
+
+
 
 header {
     background-color: #ffffff;
@@ -33,9 +42,11 @@ header {
     margin-top: 0;
     padding: 0;
 }
-h1 {
+
+.logo {
     background-color: #4aaaa5;
     color: #ffffff;
+    font-family: 'Palatino', 'Georgia', 'Times', "Times New Roman", serif;
     width: 250px;
     height: 75px;
     font-size: 28px;
@@ -47,37 +58,45 @@ h1 {
     margin-top: 0;
 }
 
-nav {
+.navbar {
+    margin-top: 0;
     display: inline;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    clear: both;
     line-height: 50px;
+    font-family: 'Verdana', sans-serif;
+    color: #8c8b8c;
+    font-size: 14px;
+
 }
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+}
+
+
+.navbar a:hover {
+    background-color: #4aaaa5; /* Change color on hover */
+    color: #ffffff;
+}
+
 .container {
     width: 960px;
-    height: 500px;
+    min-height: 500px;
     overflow: scroll;
     display: grid;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-
-
-
-
-div {
-    font-family: 'Verdana', sans-serif;
     background-color: #ffffff;
     border: #dddddd;
     color: #8c8b8c;
+    font-family: 'Verdana', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
     padding: 30px;
+    position: relative;
 }
-
 
 a {
     color: #8c8b8c;
@@ -88,7 +107,7 @@ p {
 
 }
 
-#profile {
+#profile_image {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -96,11 +115,6 @@ p {
     margin-top: 12px;
     margin-right: 20px;
 }
-
-.bio {
-    display: inline-block;
-}
-
 
 .footer {
     background-color: #666666;
@@ -116,9 +130,91 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 10;
+}
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #cccccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #666666;
+}
+
+#form {
+    padding: 20px;
+}
+
+/* Portfolio Page */
+.content {
+    position: relative;
+}
+
+.portfolio-image {
+    width: 272px;
+    height: 205px;
+    position: relative;
+    z-index: 1;
+}
+
+.text-block {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 272px;
+    height: 60px;
+    z-index: 2;
+    position: absolute;
+    bottom: 10%;
 
 }
 
+.text-block h3 {
+    line-height: 60px;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    bottom: 30%;
+}
 
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+}
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+
+}
