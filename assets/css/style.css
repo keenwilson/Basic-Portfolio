@@ -89,7 +89,7 @@ header {
     display: grid;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 120px;
     background-color: #ffffff;
     border: #dddddd;
     color: #8c8b8c;
@@ -112,8 +112,7 @@ p {
     height: 200px;
     display: inline-block;
     float: left;
-    margin-top: 12px;
-    margin-right: 20px;
+    margin: 0 1em 1em 0;
 }
 
 .footer {
@@ -160,6 +159,7 @@ input[type=submit]:hover {
 
 #form {
     padding: 20px;
+
 }
 
 /* Portfolio Page */
@@ -191,6 +191,7 @@ input[type=submit]:hover {
     text-align: center;
     font-weight: 300;
     bottom: 30%;
+    vertical-align: center;
 }
 
 .row {
