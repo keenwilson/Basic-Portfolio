@@ -2,31 +2,32 @@
 <html>
     <head>
         <title>Contact</title>
+         <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     </head>
     <body>
         <!--Site Header-->  
         <header>
-            <div class=header_container>
+            <div class="header-container">
                 <!--Navigation Bar-->  
-                <div class="navbar">
+                <nav>
                     <a href="index.html">About</a> |
                     <a href="portfolio.html">Portfolio</a> |
                     <a href="contact.html">Contact</a> 
-                </div>      
+                </nav>      
                 <!--Logo--> 
                 <div class="logo">Keen Wilson</div>
             </div>
         </header>
         <!--Site Content-->  
-        <div class="container" id="form">
+        <div class="container">
             <h2>Contact</h2>
             <hr>
             <form action="action_page.php" method="get">
             <label for"name">Name</label> 
-            <input type="text" id="name" name="Name" placeholder="Your name..">
+            <input type="text" id="name" name="Name" placeholder="John Smith">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email address..">
+            <input type="text" id="email" name="email" placeholder="example@gmail.com">
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
             <input type="submit" value="Submit">
