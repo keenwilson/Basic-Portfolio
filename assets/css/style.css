@@ -186,7 +186,7 @@ input[type=submit]:hover {
 .content {
     position: relative;
     background-color: white;
-    padding: 10px;
+    
 }
 
 .portfolio-image {
@@ -234,6 +234,7 @@ input[type=submit]:hover {
 .column {
     float: left;
     width: 33%;
+    margin-right: 10px;
 }
 
 .row:after {
